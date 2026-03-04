@@ -92,11 +92,48 @@
 						<a href="https://app.powerbi.com/view?r=eyJrIjoiMWY4YWQwNWEtOGFkMy00Zjg4LThkZjItOTc2ZDg1MWI2NzEwIiwidCI6Ijg1ZWU3Y2QzLWQ1NGQtNDdhZS1hZjYxLWVmYmQxY2JmNzk1ZSJ9" target="_blank" class="image icon solid fa-signal"><img src="images/coffee.jpg" alt="" /><div class="overlay-text">View project</div></a>
 						<div class="content">
 							<h3>Sales KPI Dashboard</h3>
-							<p style="font-size: medium; line-height: 1.2;">This project demonstrates end-to-end data analytics skills: raw transaction data was extracted and transformed using SQL, then connected directly to Power BI via the SQL Connector for live data modeling. DAX measures were developed to calculate KPIs including Year-over-Year gross margin trends, regional breakdowns, and product-level performance across 24 products, 5 categories, and 4 regions. The final deliverable was a multi-page interactive Power BI dashboard featuring dynamic slicers, a KPI summary, drill-down matrix tables, and trend visualizations — translating complex data into clear, actionable business recommendations.</p>
+							<p style="font-size: medium; line-height: 1.2;">This project demonstrates end-to-end data analytics skills: raw transaction data was extracted and transformed using SQL, then connected directly to Power BI via the SQL Connector for live data modeling. DAX measures were developed to calculate KPIs including Year-over-Year gross margin trends, regional breakdowns, and product-level performance across 24 products, 5 categories, and 4 regions. The final deliverable was a multi-page interactive Power BI dashboard featuring dynamic slicers, a KPI summary, drill-down matrix tables, and trend visualizations — translating complex data into clear, actionable business recommendations.
+								<br><a href="https://github.com/Olusam-id/Power-BI-Portfolio/blob/main/Sales_Data_Preparation.sql" target="_blank">View SQL Code</a>
+							</p>
 						</div>
 					</section>
 
 				</div>
+
+				<footer class="major container medium">
+				<div>
+					<div class="content">
+					<h3>Projects Gallery</h3>
+					</div>
+					<!-- Carousel -->
+					<div class="carousel-wrapper">
+						<div class="carousel-track" id="carouselTrack">
+							<div class="item" onclick="openLightbox(0)">
+							<img src="images/CampaignInsight.png" alt="Campaign Insight" />
+							</div>
+							<div class="item" onclick="openLightbox(1)">
+							<img src="images/CampaignResponders.png" alt="Campaign Responders" />
+							</div>
+							<div class="item" onclick="openLightbox(2)">
+							<img src="images/Sales.png" alt="Sales" />
+							</div>
+							<div class="item" onclick="openLightbox(3)">
+							<img src="images/Covid-19.png" alt="Covid-19" />
+							</div>
+						</div>
+					</div>
+
+					<!-- Lightbox -->
+					<div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightboxOnBg(event)">
+					<div class="lightbox-frame" id="lightboxFrame">
+						<button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&#x2715;</button>
+						<button class="lightbox-prev" onclick="changeImage(-1)" aria-label="Previous">&#8249;</button>
+						<img id="lightboxImg" src="" alt="" />
+						<button class="lightbox-next" onclick="changeImage(1)" aria-label="Next">&#8250;</button>
+					</div>
+					</div>
+				</div>	
+				</footer>
 
 
 				<footer class="major container medium">
@@ -167,6 +204,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js"></script>
 
 	</body>
+	
 </html>
